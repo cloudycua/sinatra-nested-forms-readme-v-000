@@ -18,7 +18,7 @@ class App < Sinatra::Base
   # itereate over params[:student][:courses]
   # which is an array containing a series of hashes
   # that each store individual course info
-    params[:student][:courses].each do |details
+    params[:student][:courses].each do |details|
     # use the course values passed into the .each block
     # to create instances of our Course class.
       Course.new(details)
